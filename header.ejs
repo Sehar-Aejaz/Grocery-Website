@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F0F0F0; /* Light Grey */
+            color: #000; /* Black */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+            padding: 20px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .content {
+            padding: 40px;
+            font-size: 18px;
+            color: #000; /* Black */
+        }
+        .highlight {
+            color: #1abc9c;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .nav-link {
+            color: #fff; /* White */
+        }
+        .nav-link:hover {
+            color: #f8f9fa; /* Light Gray */
+        }
+        .btn-white {
+            color: #fff; /* White */
+            border-color: #fff; /* White */
+        }
+        .card {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+            border: 1px solid #fff; /* White */
+        }
+        .card-title {
+            color: #fff; /* White */
+        }
+        .card-text {
+            color: #dcdcdc; /* Light Gray */
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">Grocery Smart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/products">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/offers">Offers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+        </ul>
+        <!-- Search Bar -->
+        <form action="/search" method="post" class="form-inline my-2 my-lg-0" id="searchForm">
+    <div class="mb-3">
+        <input class="form-control mr-sm-2" type="search" name="searchType" placeholder="Product name" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-success my-2 my-sm-0 btn-white" type="submit">Search</button>
+    </div>
+</form>
+
+    </div>
+</nav>
+
+
+</body>
+
+
+

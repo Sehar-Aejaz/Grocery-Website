@@ -1,0 +1,36 @@
+<%- include('header'); -%>
+
+
+
+<main>
+    <div class="container">
+        <h3><%= title %></h3>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+		    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% feedbacks.forEach(feedback => { %>
+                    <tr>
+			<td><%= feedback.id %></td>
+                        <td><%= feedback.name %></td>
+                        <td><%= feedback.email %></td>
+                        <td><%= feedback.number %></td>
+                        <td><%= feedback.feedback %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<%- include('footer'); -%>
+
+

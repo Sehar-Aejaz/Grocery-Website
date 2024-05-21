@@ -1,0 +1,68 @@
+
+<%- include('header'); -%>
+
+<main>
+    <div class="container">
+        
+        <h5>Feedback</h5>
+        <p>
+               Please complete the form below to provide some valuable feedback.
+        </p>
+
+        <div id="formContainer">
+
+            <form action="/feedback" method="post" id="postFeedbackForm">
+                <div class="row mb-2">
+                    <label class="col-sm-2 col-form-label-sm text-sm-end" for="customer">Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="customer" placeholder="Enter your name" name="name">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                  <label class="col-sm-2 col-form-label-sm text-sm-end" for="email">Email:</label>
+                  <div class="col-sm-9">
+                      <input type="text" class="form-control" id="email" placeholder="Enter your email"
+                          name="email" >
+                  </div>
+		</div>
+                <div class="row mb-2">
+                  <label class="col-sm-2 col-form-label-sm text-sm-end" for="number">Number:</label>
+                  <div class="col-sm-9">
+                      <input type="tel" class="form-control" id="number" placeholder="Enter your number"
+                          name="number" >
+                  </div>
+              </div>
+		<br>
+                <div class="row mb-2">
+                    <label class="col-sm-2 col-form-label-sm text-sm-end" for="feedback">Feedback:</label>
+                    <div class="col-sm-9">
+                        <textarea rows="5" class="form-control" id="feedback" name="feedback" placeholder="Please type your comment/feedback here..."></textarea>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm mx-auto d-flex justify-content-center ">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="col-sm mx-auto d-flex justify-content-center">
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+            </form>
+            <!-- Form for data retrieval -->
+            <form action="/feedback" method="get">
+                <div class="row mt-4">
+                    <div class="col-sm mx-auto d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Retrieve Feedback From Database</button>
+                    </div>
+                </div>
+            </form>
+            
+
+        </div>
+
+    </div>
+</main>
+
+<%- include('footer'); -%>
+
+

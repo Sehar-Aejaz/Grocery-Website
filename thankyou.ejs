@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F0F0F0; /* Light Grey */
+            color: #000; /* Black */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+            padding: 20px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .content {
+            padding: 40px;
+            font-size: 18px;
+            color: #000; /* Black */
+        }
+        .highlight {
+            color: #1abc9c;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .nav-link {
+            color: #fff; /* White */
+        }
+        .nav-link:hover {
+            color: #f8f9fa; /* Light Gray */
+        }
+        .btn-white {
+            color: #fff; /* White */
+            border-color: #fff; /* White */
+        }
+        .card {
+            background-color: #28a745; /* Green */
+            color: #fff; /* White */
+            border: 1px solid #fff; /* White */
+        }
+        .card-title {
+            color: #fff; /* White */
+        }
+        .card-text {
+            color: #dcdcdc; /* Light Gray */
+        }
+    </style>
+</head>
+
+
+<main>
+    <div class="container">
+        <p>
+	<h1>Customer Feedback</h1>
+	 <p>😊 Thank you, <strong><%= name %></strong> for your valuable feedback.Your response has been submitted successfully. We appreciate your time.
+	</p>
+            <p><a href="/">Back to Home</a></p>
+            
+    </div>
+</main>
+
+<%- include('footer'); -%>
+
